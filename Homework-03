@@ -1,0 +1,7 @@
+# Task 02: Convert days to minutes and seconds
+
+days = int(input("Enter a number of days: "))
+minutes = days * 24 * 60
+seconds = minutes * 60
+
+print(f"{days} days = {minutes} minutes = {seconds} seconds")
