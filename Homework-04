@@ -1,1 +1,25 @@
+# Créer une liste vide AVANT la boucle
+numbers = []
 
+# Demander 5 nombres
+for i in range(5):
+    num = float(input(f"Enter number {i+1}: "))  # lire un seul nombre
+    numbers.append(num)  # ajouter le nombre à la liste
+
+# Afficher la liste originale
+print("Original list:", numbers)
+
+# Trier la liste
+numbers.sort()
+print("Sorted list:", numbers)
+
+# Supprimer le plus grand nombre
+removed = numbers.pop()
+print("Removed largest number:", removed)
+
+# Afficher la nouvelle liste et la moyenne
+print("Updated list:", numbers)
+
+if numbers:
+    average = sum(numbers) / len(numbers)
+    print("Average of remaining numbers:", average)
