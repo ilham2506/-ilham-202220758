@@ -1,0 +1,46 @@
+
+def char_frequency(text):
+    frequency = {}
+    for char in text:
+        if char != ' ':  # ignorer les espaces
+            if char in frequency:
+                frequency[char] += 1
+            else:
+                frequency[char] = 1
+    return frequency
+
+# Exemple d'utilisation
+text = "hello world"
+print(char_frequency(text))
+
+# Exemple de dictionnaire
+data = {'a': 1, 'b': 2, 'c': 3}
+
+# Extraire les clés dans un set
+keys_set = set(data.keys())
+
+# Vérifier la présence d'une clé
+key_to_check = 'b'
+if key_to_check in keys_set:
+    print(f"La clé '{key_to_check}' est présente.")
+else:
+    print(f"La clé '{key_to_check}' n'existe pas.")
+
+
+# 7. Character Frequency
+def char_frequency(text):
+    ...
+
+# Test
+text = "hello world"
+print(char_frequency(text))
+
+# 8. Set from Dictionary Keys
+data = {'a': 1, 'b': 2, 'c': 3}
+keys_set = set(data.keys())
+key_to_check = 'b'
+
+if key_to_check in keys_set:
+    print(f"La clé '{key_to_check}' est présente.")
+else:
+    print(f"La clé '{key_to_check}' n'existe pas.")

@@ -1,0 +1,7 @@
+
+import distro
+print(distro.linux_distribution())
+print(distro.version())
+print(distro.id())
+print(distro.name())
+print(distro.codename())

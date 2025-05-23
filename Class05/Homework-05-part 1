@@ -1,0 +1,26 @@
+
+def unique(l:list):
+    return list(set(l))
+m = [1, 2, 2, 3, 4, 4, 5]
+unique(m)
+print(unique(m))
+
+a={1, 2, 3, 4}
+b={3, 4, 5, 6}
+print("union:", a | b)
+print("intersection:", a & b)
+print("difference (a - b):", a - b)
+print("difference symmetric:", a ^ b)
+
+def is_prime(number):
+    if number < 2:
+        return False
+    for n in range(2, int(number**0.5) + 1):
+        if number % n == 0:
+            return False
+        return True 
+user_input = int(input("write a number : "))
+if is_prime(user_input):
+    print(f"{user_input} is a prime number.")
+else:
+    print(f"{user_input} is not a prime number.")    
